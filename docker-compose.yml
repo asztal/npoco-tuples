@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mssql:
+    image: microsoft/mssql-server-linux
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=
+    ports:
+      - 1433:1433
+    restart: always
